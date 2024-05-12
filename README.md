@@ -96,9 +96,9 @@ at the bottom of your file
 
 ### Part 2: Bad Foods Gone Bad
 
-\*\*\* This Part has no written tests Run the `food.js` file in your terminal to test your outcomes.
-
 **Some bad foods are going really bad! They no longer want to play nice. They want to fight each other!**
+
+\*\*\* This Part has no written tests Run the `food.js` file in your terminal to test your outcomes.
 
 **Instructions:**
 
