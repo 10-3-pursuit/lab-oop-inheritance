@@ -50,7 +50,7 @@ This will either run the specific `test` or, in the case of adding `.only` to a 
 
 ### Run tests based on subject
 
-If you want to run tests based on `food` or `tamagotchi` only, check the `package.json` scripts` section to find the individual commands.
+If you want to run tests based on `food` or `tamagotchi` only, check the package.json `scripts` section to find the individual commands.
 
 ### Run file
 
