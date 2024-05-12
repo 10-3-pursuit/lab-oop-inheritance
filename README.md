@@ -96,7 +96,7 @@ at the bottom of your file
 
 **\*\*\* This Part has no written tests** Run the `food.js` file in your terminal to test your outcomes.
 
-Some bad foods are going really bad! They no longer want to play nice. They want to fight each other!
+**Some bad foods are going really bad! They no longer want to play nice. They want to fight each other!**
 
 - Create a new class `BadFood` that inherits from the `Food` class
 
@@ -161,7 +161,7 @@ Test your Bad Foods by:
 
 This part does have tests. See above at the beginning of the lab to understand how to run them.
 
-Create a virtual pet that can play, eat, sleep and more! Try to keep your pet happy or else it will be rehomed!
+**Create a virtual pet that can play, eat, sleep and more! Try to keep your pet happy or else it will be rehomed!**
 
 - Create a tamagotchi class
 
@@ -213,7 +213,7 @@ Test your class by
 
 ### Bonus
 
-- Keep going and make the `BadFood` battle play out until someone is knocked out!
+**Keep going and make the `BadFood` battle play out until someone is knocked out!**
 
 With the following methods, be sure to add some console logs so as a spectator you know how this fight is going down!
 
