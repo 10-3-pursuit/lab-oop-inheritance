@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:food": "jest tests/food.test.js",
+    "test:tamagotchi": "jest tests/tamagotchi.test.js",
     "watch": "jest --watch-all"
   },
   "repository": {
