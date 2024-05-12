@@ -48,9 +48,13 @@ This will either run the specific `test` or, in the case of adding `.only` to a 
 
 > **NOTE:** Don't forget to remove this after you get the test to pass!
 
+### Run tests based on subject
+
+If you want to run tests based on `food` or `tamagotchi` only, check the `package.json `scripts` section to find the individual commands.
+
 ### Run file
 
-If you want to manually test out your file, you can do so by running the following command.
+If you want to manually see the outputs of your logs from your file, you can do so by running the following command.
 
 ```
 node [filename]
