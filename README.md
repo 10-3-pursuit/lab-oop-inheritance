@@ -82,7 +82,7 @@ This lab has two separate disconnected parts. The first part will consist of cre
   - prepare: console logs the `food name is being prepared`
   - isFresh: console logs a message if the food is fresh with the number of days left: `There are 3 days left before ice cream spoils`.
     - Else console logs a different message if the food is no longer fresh (0 or less days left)
-    - `ice cream has spoiled.`
+      - `ice cream has spoiled.`
   - aDayPasses: decreases the `daysToSpoil` attribute by 1, calls the `isFresh` method to check freshness
 
 Test your class by
