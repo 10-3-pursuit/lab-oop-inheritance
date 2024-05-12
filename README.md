@@ -68,7 +68,9 @@ The output will be printed to your terminal.
 
 ## Instructions
 
-### Food
+This lab has two separate disconnected parts. The first part will consist of creating a `Food` class. The second, a `Tamagotchi` class.
+
+### Part 1: Food
 
 - Create a food class
 
@@ -90,7 +92,7 @@ Test your class by
 
 at the bottom of your file
 
-### Tamagotchi
+### Part 2: Tamagotchi
 
 Create a virtual pet that can play, eat, sleep and more! Try to keep your pet happy or else it will be rehomed!
 
