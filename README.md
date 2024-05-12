@@ -72,7 +72,9 @@ This lab has three separate parts. The first two parts will consist of creating 
 
 ### Part 1: Food
 
-- Create a food class
+**Instructions:**
+
+Create a food class
 
 - Attributes
   - name: string
@@ -94,11 +96,13 @@ at the bottom of your file
 
 ### Part 2: Bad Foods Gone Bad
 
-**\*\*\* This Part has no written tests** Run the `food.js` file in your terminal to test your outcomes.
+\*\*\* This Part has no written tests Run the `food.js` file in your terminal to test your outcomes.
 
 **Some bad foods are going really bad! They no longer want to play nice. They want to fight each other!**
 
-- Create a new class `BadFood` that inherits from the `Food` class
+**Instructions:**
+
+Create a new class `BadFood` that inherits from the `Food` class
 
 - Attributes
   - name: (inherited) string
@@ -159,11 +163,13 @@ Test your Bad Foods by:
 
 ### Part 3: Tamagotchi
 
-This part does have tests. See above at the beginning of the lab to understand how to run them.
-
 **Create a virtual pet that can play, eat, sleep and more! Try to keep your pet happy or else it will be rehomed!**
 
-- Create a tamagotchi class
+This part does have tests. See above at the beginning of the lab to understand how to run them.
+
+**Instructions:**
+
+Create a Tamagotchi class
 
 - Attributes
   - name: string
