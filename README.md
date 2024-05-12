@@ -92,7 +92,7 @@ Test your class by
 
 at the bottom of your file
 
-### Part 2:: Bad Foods Gone Bad
+### Part 2: Bad Foods Gone Bad
 
 **\*\*\* This Part has no written tests** Run the `food.js` file in your terminal to test your outcomes.
 
@@ -115,8 +115,8 @@ You may create your own weapons array for your bad food however there are sample
 
 Sample weapons array for a donut
 
-```js
-;[
+```python
+[
   {
     name: 'Sprinkle Spray',
     hitPoints: 3,
@@ -134,8 +134,8 @@ Sample weapons array for a donut
 
 Sample weapons array for a pizza
 
-```js
-;[
+```python
+[
   {
     name: 'Mouth Burn',
     hitPoints: 3,
@@ -211,7 +211,7 @@ Test your class by
 - creating an instance
 - running each method at least once
 
-#### Bonus
+### Bonus
 
 - Keep going and make the `BadFood` battle play out until someone is knocked out!
 
