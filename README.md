@@ -68,7 +68,7 @@ The output will be printed to your terminal.
 
 ## Instructions
 
-This lab has three separate parts. The first two parts will consist of creating a `Food` class in the `food.js` file. The second part will add inheritance to that class by adding a `BadFood` class. Finally in the `tamagotchi.js` file you will create a `Tamagotchi` class for repetition.
+This lab has three separate parts. The first two parts will consist of creating a `Food` class in the `food.js` file. The second part will add inheritance to that class by adding a `BadFood` class. Finally in the `tamagotchi.js` file you will create a `Tamagotchi` class.
 
 ### Part 1: Food
 
