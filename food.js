@@ -22,5 +22,9 @@ pizza.prepare();
 pizza.isFresh();
 pizza.aDayPasses();
 
+class BadFood extends Food {
+
+}
+
 // Do not edit below this line
 module.exports = Food
