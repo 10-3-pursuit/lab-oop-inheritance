@@ -52,7 +52,9 @@ const badRoti1 = new BadFood("Beef Roti");
 const badRoti2 = new BadFood("Shrimp Roti");
 
 // badRoti1.prepare();
-badRoti2.prepare();
+// badRoti2.prepare();
+
+badRoti1.fight(badRoti2);
 
 // Do not edit below this line
 module.exports = Food
