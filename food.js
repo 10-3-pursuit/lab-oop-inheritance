@@ -8,6 +8,12 @@ class food {
     prepare(food) {
         console.log(`${food.name} is being prepared`)
     }
+    isFresh(food) {
+        const {fresh, daysToSpoil} = food;
+        if (fresh === true && daysToSpoil > 0) {
+            
+        }
+    }
 }
 // Do not edit below this line
 module.exports = Food
