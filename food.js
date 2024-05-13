@@ -23,8 +23,14 @@ pizza.isFresh();
 pizza.aDayPasses();
 
 class BadFood extends Food {
-
+    constructor(name, daysToSpoil, fresh=true){
+        super(name, daysToSpoil=20, fresh=true);
+        this.daysToSpoil = daysToSpoil;
+        this.fresh = daysToSpoil <= 0 ? false : true;
+    }
 }
-
+const iceCream = new BadFood ("ice cream")
+iceCream.prepare();
+iceCream.isFresh();
 // Do not edit below this line
 module.exports = Food
