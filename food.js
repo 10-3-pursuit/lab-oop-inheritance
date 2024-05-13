@@ -48,6 +48,11 @@ class BadFood extends Food {
         console.log(`${this.name} has ${this.daysToSpoil} days before being spoiled, but ${enemy.name} is still at ${enemy.daysToSpoil} days!`);
     }
 }
+const badRoti1 = new BadFood("Beef Roti");
+const badRoti2 = new BadFood("Shrimp Roti");
+
+// badRoti1.prepare();
+badRoti2.prepare();
 
 // Do not edit below this line
 module.exports = Food
