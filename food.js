@@ -48,7 +48,7 @@ class BadFood extends Food {
         if(this.daysToSpoil <= 0){
             this.fresh = false
         }
-        console.log(`${target.name} only has ${target.daysToSpoil} days before being spoiled , but I am still at ${this.daysToSpoil} days!`)
+        console.log(`${target.name} only has ${target.daysToSpoil} days before being spoiled, but I am still at ${this.daysToSpoil} days!`)
     }
 }
 
