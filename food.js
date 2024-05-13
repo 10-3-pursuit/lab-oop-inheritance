@@ -46,6 +46,21 @@ class BadFood extends Food {
       `${instance.name} only has ${instance.daysToSpoil} days before beign spoiled, but I am still at ${this.daysToSpoil} days!`
     );
   }
+  heal() {
+    this.daysToSpoil += 2;
+    if (this.daysToSpoil > 20) {
+      this.daysToSpoil = 20;
+    }
+  }
+  block() {
+    this.daysToSpoil -= 0;
+  }
+  actionSelector() {
+    const selectedInx = selectorArray[Math.floor(Math.random() * 3)];
+  }
+  victory() {
+    console.log(`${this.name} wins the battle!`);
+  }
 }
 
 const pizzaWeapons = [
@@ -79,6 +94,8 @@ const donutWeapons = [
   },
 ];
 const donut = new BadFood("donut", 20, true, donutWeapons);
+
+const selectorArray = [this.fight, this.heal, this.block];
 
 pizza.fight(donut);
 donut.fight(pizza);
