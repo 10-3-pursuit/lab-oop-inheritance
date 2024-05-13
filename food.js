@@ -23,5 +23,31 @@ class Food {
         this.isFresh();
     }
 }
+// const banana = new Food("Banana", 3);
+// // banana.prepare();
+// // banana.isFresh();
+// banana.aDayPasses();
+
+class BadFood extends Food {
+    constructor(name) {
+        super(name, 20); // Call the constructor of the parent class (Food)
+        this.weapons = [
+            { name: 'Beef Roti', hitPoints: 3 },
+            { name: 'Shrimp Roti', hitPoints: 4 },
+            { name: 'Goat Roti', hitPoints: 5 }
+        ];
+    }
+
+    prepare() {
+        console.log(`I am ${this.name} and my calories are too high to count!`);
+    }
+
+    fight(enemy) {
+        const weapon = this.weapons[Math.floor(Math.random() * this.weapons.length)];
+        enemy.daysToSpoil -= weapon.hitPoints;
+        console.log(`${this.name} has ${this.daysToSpoil} days before being spoiled, but ${enemy.name} is still at ${enemy.daysToSpoil} days!`);
+    }
+}
+
 // Do not edit below this line
 module.exports = Food
