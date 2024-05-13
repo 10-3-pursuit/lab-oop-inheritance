@@ -5,19 +5,22 @@ class Food {
         this.daysToSpoil = daysToSpoil
         this.fresh = fresh
     }
-    prepare(food) {
-        console.log(`${food.name} is being prepared`)
+    prepare() {
+        console.log(`${this.name} is being prepared`)
     }
-    isFresh(food) {
-        const {name, fresh, daysToSpoil} = food;
-        fresh === true && daysToSpoil > 0 ? `There are ${daysToSpoil} days left before ${name} spoils.` : `${name} has spoiled.`
+    isFresh() {
+        this.fresh === true && this.daysToSpoil > 0 ? console.log(`There are ${this.daysToSpoil} days left before ${this.name} spoils.`) : console.log(`${this.name} has spoiled.`)
     }
-    aDayPasses(food) {
-        food.daysToSpoil --;
+    aDayPasses() {
+        this.daysToSpoil --;
         this.isFresh();
     }
 }
 
+const pizza = new Food("pizza", 3);
+pizza.prepare();
+pizza.isFresh();
+pizza.aDayPasses();
 
 // Do not edit below this line
 module.exports = Food
