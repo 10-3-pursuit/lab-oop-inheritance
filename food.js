@@ -44,9 +44,10 @@ class BadFood extends Food {
         console.log(`${this.name} only has ${this.daysToSpoil} days before being spoiled , but I am still at ${newBadFood.daysToSpoil} days!`)
     }
 }
-const iceCream = new BadFood ("ice cream", "sprinkles", "pistachios", "fudge")
+const iceCream = new BadFood ("ice cream", "Melt", "Brain Freeze", "Ice Cream Machine Broken");
 iceCream.prepare();
 iceCream.isFresh();
 iceCream.aDayPasses();
+iceCream.fight("pizza", "Mouth Burn", "Hot Pepper Storm", "Cheese Grease");
 // Do not edit below this line
 module.exports = Food
