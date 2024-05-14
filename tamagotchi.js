@@ -25,6 +25,7 @@ class Tamagotchi {
         if (this.sick === true) {
             this.full = 9;
             this.energy -= 3;
+            this.sick = false;
         } else {
             console.log("Ewww! I don't want medicine! ^(T_T)^")
             this.energy --;
