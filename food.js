@@ -25,7 +25,6 @@ pizza.aDayPasses();
 class BadFood extends Food {
     constructor(name, weaponOne, weaponTwo, weaponThree, daysToSpoil=20, fresh=true){
         super(name, daysToSpoil, fresh=true);
-        // this.daysToSpoil = daysToSpoil;
         this.fresh = daysToSpoil <= 0 ? false : true;
         this.weapons = [
             {name: weaponOne, hp: 3}, 
@@ -37,11 +36,23 @@ class BadFood extends Food {
         console.log(`I am ${this.name} and my calories are too high to count!`);
     }
     fight (newBadFood, weaponOne, weaponTwo, weaponThree) {
-        // make math.random be integer and have range between 0-2 for the index
-        new BadFood (newBadFood.name, weaponOne, weaponTwo, weaponThree);
-        const selectedWeapon = newBadFood.weapons[Math.floor(Math.random() * 3)] // 3 numbers between 0-2 (inclusive)
-        selectedWeapon.hp - Math.floor(Math.random() * 6) // 6 numbers between 0-5 (inclusive)
-        console.log(`${this.name} only has ${this.daysToSpoil} days before being spoiled , but I am still at ${newBadFood.daysToSpoil} days!`)
+        // --- lab requirements ---
+        const opponent = new BadFood (newBadFood, weaponOne, weaponTwo, weaponThree);
+        const selectedRandomOppWeapon = opponent.weapons[Math.floor(Math.random() * 3)] // 3 numbers between 0-2 (inclusive)
+        let opponentHP = selectedRandomOppWeapon.hp - selectedRandomOppWeapon.hp; // decreases the hit points by the number from the selected weapon method
+        console.log(`${this.name} only has ${this.daysToSpoil} days before being spoiled , but I am still at ${opponent.daysToSpoil} days!`);
+
+        // next lines not required in lab, but added to make fight more realistic
+        const selectedOppWeaponName = opponent.weapons[Math.floor(Math.random() * 3)].name
+        console.log(`opponent weapon: ${selectedOppWeaponName}`)
+        const yourSelectedWeaponName = this.weapons[Math.floor(Math.random() * 3)].name
+        console.log(`${this.name} weapon: ${yourSelectedWeaponName}`)
+        opponentHP = opponent.weapons[Math.floor(Math.random() * 3)].hp; // reassigned it so opp hp isn't 0
+        console.log(`opponent hp: ${opponentHP}`);
+        let yourFoodWeaponHP = this.weapons[Math.floor(Math.random() * 3)].hp;
+        console.log(`${this.name} hp: ${yourFoodWeaponHP}`);
+        yourFoodWeaponHP = yourFoodWeaponHP - opponentHP;
+        console.log(`${this.name} hp after attack: ${yourFoodWeaponHP}`);
     }
 }
 const iceCream = new BadFood ("ice cream", "Melt", "Brain Freeze", "Ice Cream Machine Broken");
