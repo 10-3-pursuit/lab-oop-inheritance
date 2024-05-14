@@ -12,7 +12,7 @@ class Tamagotchi {
         console.log(`Hello, I'm ${this.name}!`)
     }
     status () {
-        console.log(`My energy is: ${this.energy}\nI am this full: ${this.full}\nMy mood is: ${this.mood}\n${this.sick===false ? "I am not sick ^(^_^)^" : "I am sick :'("}`)
+        console.log(`**********************\nMy energy is: ${this.energy}\nI am this full: ${this.full}\nMy mood is: ${this.mood}\n${this.sick===false ? "I am not sick ^(^_^)^" : "I am sick :'("}\n**********************`)
     }
 }
 const musa = new Tamagotchi('musa');
