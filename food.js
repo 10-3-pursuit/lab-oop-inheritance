@@ -58,8 +58,10 @@ class BadFood extends Food {
 const iceCream = new BadFood ("ice cream", "Melt", "Brain Freeze", "Ice Cream Machine Broken");
 const donut = new BadFood ("donut", "Sprinkle Spray", "Icing Deluge", "Sugar Shock");
 iceCream.prepare();
+donut.prepare();
 iceCream.isFresh();
 iceCream.aDayPasses();
 iceCream.fight(donut, donut.weapons[0].name, donut.weapons[1].name, donut.weapons[2].name);
+donut.fight(iceCream, iceCream.weapons[0].name, iceCream.weapons[1].name, iceCream.weapons[2].name);
 // Do not edit below this line
 module.exports = Food
