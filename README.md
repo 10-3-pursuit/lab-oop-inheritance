@@ -199,7 +199,7 @@ Create a Tamagotchi class
       - console log "I am too tired to play" - reduce energy by 1
   - sleep:
     - increases energy by 4 and decreases full by 3
-    - timePasses:
+  - timePasses:
     - if tamagotchi is not sick - mood decreases by 2, fullness and energy decrease by 1
       -if tamagotchi is sick - mood decreases by 3, fullness and energy decrease by 2
   - badGuardian
