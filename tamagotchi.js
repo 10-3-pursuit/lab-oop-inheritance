@@ -31,6 +31,12 @@ class Tamagotchi {
             this.energy --;
         }
     }
+    play () {
+        if (this.sick) {
+            console.log("I'm too sick to play! ^(T_T)^");
+            return;
+        }
+    }
 }
 const tisa = new Tamagotchi('Tisa');
 tisa.greet();
