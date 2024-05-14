@@ -39,7 +39,7 @@ class BadFood extends Food {
         console.log(`I am ${this.name} and my calories are too high to count!`)
     }
     fight(target){
-        const randomIndex = Math.floor(Math.random() * 3)
+        const randomIndex = Math.floor(Math.random() * this.weapons.length)
         const randomWeapon = this.weapons[randomIndex]
         target.daysToSpoil -= randomWeapon.hitPoints
         if(target.daysToSpoil <= 0){
@@ -48,7 +48,7 @@ class BadFood extends Food {
         if(this.daysToSpoil <= 0){
             this.fresh = false
         }
-        console.log(`${target.name} only has ${target.daysToSpoil} days before being spoiled, but I am still at ${this.daysToSpoil} days!`)
+        console.log(`${target.name} only has ${target.daysToSpoil} days before being spoiled, but ${this.name} is still at ${this.daysToSpoil} days!`)
     }
 }
 
