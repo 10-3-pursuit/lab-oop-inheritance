@@ -20,5 +20,14 @@ class Food {
         this.isFresh();
     }
 }
+
+class BadFood extends Food {
+    constructor(name, daysToSpoil = 20, fresh = true, weapons = [{ hp: 3 }, { hp: 4 }, { hp: 5 }]) {
+        this.name = name;
+        this.daysToSpoil = daysToSpoil;
+        this.fresh = fresh;
+        this.weapons = weapons;
+    }
+}
 // Do not edit below this line
 module.exports = Food
