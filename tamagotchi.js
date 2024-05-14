@@ -21,11 +21,21 @@ class Tamagotchi {
             this.sick = true;
         }
     }
+    medicate () {
+        if (this.sick === true) {
+            this.full = 9;
+            this.energy -= 3;
+        } else {
+            console.log("Ewww! I don't want medicine! ^(T_T)^")
+            this.energy --;
+        }
+    }
 }
 const tisa = new Tamagotchi('Tisa');
 tisa.greet();
 tisa.status();
 tisa.eat();
 tisa.status();
+// tisa.medicate();
 // Do not edit below this line
 module.exports = Tamagotchi
