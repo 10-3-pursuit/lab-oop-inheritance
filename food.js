@@ -35,9 +35,9 @@ class BadFood extends Food {
     prepare() {
         console.log(`I am ${this.name} and my calories are too high to count!`);
     }
-    fight (newBadFood, weaponOne, weaponTwo, weaponThree) {
+    fight (opp, weaponOne, weaponTwo, weaponThree) {
         // --- lab requirements ---
-        const opponent = new BadFood (newBadFood, weaponOne, weaponTwo, weaponThree);
+        const opponent = new BadFood (opp, weaponOne, weaponTwo, weaponThree);
         const selectedRandomOppWeapon = opponent.weapons[Math.floor(Math.random() * 3)] // 3 numbers between 0-2 (inclusive)
         let opponentHP = selectedRandomOppWeapon.hp - selectedRandomOppWeapon.hp; // decreases the hit points by the number from the selected weapon method
         console.log(`${this.name} only has ${this.daysToSpoil} days before being spoiled , but I am still at ${opponent.daysToSpoil} days!`);
