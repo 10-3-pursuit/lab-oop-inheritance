@@ -84,7 +84,7 @@ const myTamagotchi = new Tamagotchi("Fluffy");
 myTamagotchi.greet(); // Output: Hello, I'm Fluffy!
 myTamagotchi.status(); // Output: Energy: 9, Fullness: 8, Mood: 6, Sick: false
 myTamagotchi.eat();
-myTamagotchi.status(); // Output: Energy: 8, Fullness: 10, Mood: 6, Sick: true
+myTamagotchi.status(); // Output: Energy: 8,rue
 
 
 // Do not edit below this line

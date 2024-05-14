@@ -52,10 +52,10 @@ class Food {
         console.log(`I am ${this.name} and my calories are too high to count!`);
     }
     fight(otherFood) {
-        const selectedWeapon = this.weapons[Math.floor(Math.random() * this.weapons.length)];
+        const selectedWeapon = this.weapons[Math.floor(Math.random() * this.weapons.length + 1)];
         otherFood.daysToSpoil -= selectedWeapon.hitPoints;
 
-        console.log(`${this.name} is only has ${otherFood.daysToSpoil} days before being spoiled, but I am still at ${this.daysToSpoil} days!`);
+        console.log(`${otherFood.name} is only has ${this.daysToSpoil} days before being spoiled, but I am still at ${this.daysToSpoil} days!`);
     }
 }
 
