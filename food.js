@@ -4,7 +4,7 @@ class Food {
         this.daysToSpoil = daysToSpoil;
         this.fresh = fresh;
     }
-    Prepare() {
+    prepare() {
         console.log(`${this.name} is being prepared`)
     }
     isFresh() {
@@ -52,7 +52,9 @@ class BadFood extends Food {
     }
 }
 
+// Test instance
 
+// const pizza = new BadFood("pizza", 3)
 
 
 module.exports = Food
