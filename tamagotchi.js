@@ -113,5 +113,4 @@ const dragon = new Tamagotchi("Drago")
   
 
 
-
 module.exports = Tamagotchi
