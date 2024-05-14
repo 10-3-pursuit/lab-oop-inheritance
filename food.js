@@ -23,15 +23,23 @@ pizza.isFresh();
 pizza.aDayPasses();
 
 class BadFood extends Food {
-    constructor(name, weaponOne, weaponTwo, weaponThree, daysToSpoil, fresh=true){
+    constructor(name, weaponOne, weaponTwo, weaponThree, daysToSpoil=20, fresh=true){
         super(name, daysToSpoil, fresh=true);
-        this.daysToSpoil = daysToSpoil ? 20 : daysToSpoil;
+        // this.daysToSpoil = daysToSpoil;
         this.fresh = daysToSpoil <= 0 ? false : true;
-        this.weapons = [{name: weaponOne, hp: 3}, {name:weaponTwo, hp: 4}, {name: weaponThree, hp: 5}];
+        this.weapons = [
+            {name: weaponOne, hp: 3}, 
+            {name:weaponTwo, hp: 4}, 
+            {name: weaponThree, hp: 5}
+        ];
+    }
+    prepare() {
+        console.log(`I am ${this.name} and my calories are too high to count!`);
     }
 }
 const iceCream = new BadFood ("ice cream", "sprinkles", "pistachios", "fudge")
 iceCream.prepare();
 iceCream.isFresh();
+iceCream.aDayPasses();
 // Do not edit below this line
 module.exports = Food
