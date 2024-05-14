@@ -55,6 +55,23 @@ class Tamagotchi {
         this.energy += 4;
         this.full -= 3;
     }
+    timePasses() {
+        if(this.sick === false) {
+            this.mood -= 2;
+            this.full --;
+            this.energy --;
+        } else {
+            this.mood -=3;
+            this.full -=2;
+            this.energy -=2;
+        }
+    }
+    badGuardian() {
+        if(this.energy <= 0 || this.mood <= 0 || this.full <= 0) {
+            this.rehomed = true;
+            console.log(`${this.name} has been rehomed due to neglect.`)
+        }
+    }
 }
 /* ---- Method for timePasses: ----
 - if tamagotchi is not sick - mood decreases by 2, fullness and energy decrease by 1 -if tamagotchi is sick - mood decreases by 3, fullness and energy decrease by 2
@@ -71,5 +88,6 @@ tisa.medicate();
 tisa.status();
 tisa.sleep();
 tisa.status();
+tisa.timePasses();
 // Do not edit below this line
 module.exports = Tamagotchi
