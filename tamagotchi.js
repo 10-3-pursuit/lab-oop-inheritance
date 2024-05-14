@@ -51,7 +51,14 @@ class Tamagotchi {
             this.full --;
         }
     }
+    sleep () {
+        this.energy += 4;
+        this.full -= 3;
+    }
 }
+/* ---- Method for timePasses: ----
+- if tamagotchi is not sick - mood decreases by 2, fullness and energy decrease by 1 -if tamagotchi is sick - mood decreases by 3, fullness and energy decrease by 2
+*/
 const tisa = new Tamagotchi('Tisa');
 tisa.greet();
 tisa.status();
@@ -61,6 +68,8 @@ tisa.medicate();
 tisa.eat();
 tisa.status();
 tisa.medicate();
+tisa.status();
+tisa.sleep();
 tisa.status();
 // Do not edit below this line
 module.exports = Tamagotchi
