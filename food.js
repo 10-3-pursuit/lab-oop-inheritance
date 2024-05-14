@@ -23,13 +23,14 @@ pizza.isFresh();
 pizza.aDayPasses();
 
 class BadFood extends Food {
-    constructor(name, daysToSpoil, fresh=true){
-        super(name, daysToSpoil=20, fresh=true);
-        this.daysToSpoil = daysToSpoil;
+    constructor(name, weaponOne, weaponTwo, weaponThree, daysToSpoil, fresh=true){
+        super(name, daysToSpoil, fresh=true);
+        this.daysToSpoil = daysToSpoil ? 20 : daysToSpoil;
         this.fresh = daysToSpoil <= 0 ? false : true;
+        this.weapons = [{name: weaponOne, hp: 3}, {name:weaponTwo, hp: 4}, {name: weaponThree, hp: 5}];
     }
 }
-const iceCream = new BadFood ("ice cream")
+const iceCream = new BadFood ("ice cream", "sprinkles", "pistachios", "fudge")
 iceCream.prepare();
 iceCream.isFresh();
 // Do not edit below this line
