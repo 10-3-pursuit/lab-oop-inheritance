@@ -6,7 +6,7 @@ class Food {
         this.fresh = fresh;
     }
     prepare() {
-        console.log(this.name)
+        console.log(`${this.name} is being prepared`)
     }
     isFresh() {
         if (this.daysToSpoil <= 0) {
