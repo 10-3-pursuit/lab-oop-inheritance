@@ -48,15 +48,15 @@ class Tamagotchi {
             console.log(`${this.name} is sick and too tired to play.`);
             this.mood -= 1;
             this.energy -= 1;
-        } else if (this.mood >= 9 || this.energy <= 3) {
-            console.log(`${this.name} is in too good a mood or too tired to play.`);
-            this.energy -= 1;
+        } else if (this.mood >= 9 ) {
+            console.log(`${this.name} is in too good a mood play.`);
+            this.energy -= 2;
             this.full -= 1;
+        }else if(this.energy <= 3){
+            console.log(`${this.name} is too tired to play.`);
+            this.energy -= 1;
         } else {
             this.mood += 2;
-            if (this.mood > 9) {
-                this.mood = 9; // Cap mood at 9
-            }
             this.energy -= 1;
             this.full -= 1;
         }
