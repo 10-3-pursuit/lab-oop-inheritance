@@ -36,6 +36,13 @@ class BadFood extends Food {
     prepare() {
         console.log(`I am ${this.name} and my calories are too high to count!`);
     }
+    fight (newBadFood) {
+        // make math.random be integer and have range between 0-2 for the index
+        new BadFood (newBadFood.name, weaponOne, weaponTwo, weaponThree)
+        const selectedWeapon = newBadFood.weapons[Math.random]
+        selectedWeapon.hp - Math.random
+        console.log(` is only has <pizza.daysToSpoil> days before being spoiled , but I am still at <donut.daysToSpoil> days!`)
+    }
 }
 const iceCream = new BadFood ("ice cream", "sprinkles", "pistachios", "fudge")
 iceCream.prepare();
