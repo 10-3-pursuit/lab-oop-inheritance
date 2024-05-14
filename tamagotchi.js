@@ -74,6 +74,13 @@ class Tamagotchi {
     }
 
 }
-
+const ourPet = new Tamagotchi("Tama");
+// ourPet.greet();
+// ourPet.status();
+// ourPet.eat();
+// ourPet.play();
+// ourPet.medicate();
+// ourPet.sleep();
+// ourPet.timePasses();
 // Do not edit below this line
 module.exports = Tamagotchi
