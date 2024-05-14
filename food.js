@@ -28,6 +28,9 @@ class BadFood extends Food {
         this.fresh = fresh;
         this.weapons = weapons;
     }
+    preapare() {
+        console.log(`I am ${this.name} and my calories are too high to count!`)
+    }
 }
 // Do not edit below this line
 module.exports = Food
