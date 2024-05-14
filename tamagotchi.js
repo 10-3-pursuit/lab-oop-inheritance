@@ -35,7 +35,7 @@ class Tamagotchi {
         if (this.sick) {
             this.full = 9;
             this.energy -= 3;
-            this.sick = false; // Set sick to false after medicating
+            this.sick = false; 
             console.log(`${this.name} has been medicated.`);
         } else {
             console.log(`${this.name} refuses to take medicine.`);
