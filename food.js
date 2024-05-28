@@ -31,6 +31,10 @@ class BadFood extends Food {
     preapare() {
         console.log(`I am ${this.name} and my calories are too high to count!`)
     }
+    fight(opponent) {
+        opponent.daysToSpoil -= this.weapons[(Math.floor(Math.random() * (2 + 1)))].hp;
+        console.log(`${opponent.name} only has ${opponent.daysToSpoil} days before being spoiled , but I am still at ${this.daysToSpoil} days!`)
+    }
 }
 // Do not edit below this line
 module.exports = Food
